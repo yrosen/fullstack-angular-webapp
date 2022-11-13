@@ -1,11 +1,11 @@
-import baseConfig from '../../jest.config.js';
+import baseConfig from '../../jest.config';
 
 /** @type {import('jest').Config} */
 const config = {
-    ...baseConfig,
     displayName: `${baseConfig.displayName} - SERVER`,
+    verbose: true,
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$',
-    roots: [ './' ],
+    transform: { '^.+\\.ts?$': 'ts-jest' },
 };
 
 export default config;

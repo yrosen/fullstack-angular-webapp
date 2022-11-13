@@ -7,10 +7,10 @@
     "start:client": "ng serve",
     "build:client": "ng build",
     "build:server": "tsc --project ./src/server --outDir ./dist/server",
-    "test:client": "ng test",
-    "test:server": "jest --config=./src/server/jest.config.js"
+    "test": "jest",
+    "test:client": "jest --config=./src/client/jest.config.ts",
+    "test:server": "jest --config=./src/server/jest.config.ts"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",

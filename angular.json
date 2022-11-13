@@ -82,23 +82,6 @@
           "options": {
             "browserTarget": "fullstack-ng:build"
           }
-        },
-        "test": {
-          "builder": "@angular-builders/jest:run",
-          "options": {
-            "configPath": "src/client/jest.config.js",
-            "tsConfig": "src/client/tsconfig.spec.json",
-            "polyfills": [ "src/client/polyfills.ts" ],
-            "inlineStyleLanguage": [ "scss" ],
-            "assets": [
-              "src/client/favicon.ico",
-              "src/client/assets"
-            ],
-            "styles": [
-              "src/client/styles.scss"
-            ],
-            "scripts": []
-          }
         }
       }
     }
