@@ -88,8 +88,8 @@
           "options": {
             "main": "src/client/test.ts",
             "polyfills": "src/client/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "tsConfig": "src/client/tsconfig.spec.json",
+            "karmaConfig": "src/client/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/client/favicon.ico",
