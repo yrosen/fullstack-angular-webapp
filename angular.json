@@ -72,7 +72,8 @@
               "browserTarget": "fullstack-ng:build:production"
             },
             "development": {
-              "browserTarget": "fullstack-ng:build:development"
+              "browserTarget": "fullstack-ng:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
