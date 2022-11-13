@@ -3,7 +3,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist/client",
-    "types": []
+    "types": ["jest"]
   },
   "files": [
     "./main.ts",

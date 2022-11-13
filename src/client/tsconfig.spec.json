@@ -3,12 +3,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../spec/client",
-    "types": [
-      "jasmine"
-    ]
+    "emitDecoratorMetadata": true,
+    "module": "CommonJs",
+    "types": ["jest"]
   },
   "files": [
-    "./test.ts",
     "./polyfills.ts"
   ],
   "include": [

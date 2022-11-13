@@ -4,6 +4,7 @@ import baseConfig from '../../jest.config.js';
 const config = {
     ...baseConfig,
     displayName: `${baseConfig.displayName} - SERVER`,
+    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$',
     roots: [ './' ],
 };
 
