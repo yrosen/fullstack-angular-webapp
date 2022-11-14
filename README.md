@@ -10,11 +10,17 @@ You can also run only specific components by running `npm run start:server` or `
 
 ## PRODUCTION BUILD
 
-TK
+Run `npm run build` to build all components to the dist/ directory.
+
+As usual, you can also run `npm run build:client` or `npm run build:server` to build either the frontend or the backend.
+
+For production usage, you'll need something to serve `dist/client` to the browser and to run `dist/server` via node. Another option is to use `express.static` in the server to serve the files in `dist/client`.
 
 ## DATABASE
 
-TK
+The database is handled via the [Prisma ORM](https://www.prisma.io/). You define your database configuration and data models in `schema.prisma`, and TypeScript models can be generated into a `shared` directory for use on both the frontend and the backend.
+
+Use `npm run db:generate` to create the shared TypeScript files for the models defined in `schema.prisma`. Use `npm run db:push` to push your database structure to the database server (e.g. MySQL).
 
 ## RUNNING UNIT TESTS
 

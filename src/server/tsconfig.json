@@ -1,15 +1,14 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "baseUrl": "./src",
-        "outDir": "../../dist/server/server",
+        "baseUrl": "./",
+        "outDir": "../../dist/server",
         "module": "commonjs",
+        "moduleResolution": "node",
         "esModuleInterop": true,
         "resolveJsonModule": false,
         "noEmit": false,
         "skipLibCheck": true
     },
-    "include": [
-        "src/**/*",
-    ]
+    "include": ["index.ts"]
 }

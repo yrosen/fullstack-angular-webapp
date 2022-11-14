@@ -2,7 +2,7 @@
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 
-import { PrismaClient } from '../../shared/types.g/index.js';
+import { PrismaClient } from '../shared/types.g/index.js';
 
 const app = express();
 
