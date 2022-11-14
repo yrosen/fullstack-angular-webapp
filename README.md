@@ -1,6 +1,12 @@
-# FULLSTACK ANGULAR+EXPRESS
+# FULLSTACK ANGULAR + EXPRESS + PRISMA
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9, and components added manually with NPM.
+
+**What is it?** The goal of this project is to provide a starter kit for a fullstack web application. It provides:
+ * a frontend via Angular
+ * a backend via Express.js
+ * unified testing via Jest
+ * shared data models and an ORM via Prisma
 
 ## DEVELOPMENT SERVER
 
