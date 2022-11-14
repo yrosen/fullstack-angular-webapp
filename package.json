@@ -9,7 +9,9 @@
     "build:server": "tsc --project ./src/server --outDir ./dist/server",
     "test": "jest",
     "test:client": "jest --config=./src/client/jest.config.ts",
-    "test:server": "jest --config=./src/server/jest.config.ts"
+    "test:server": "jest --config=./src/server/jest.config.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
   },
   "dependencies": {
     "@angular/animations": "^14.2.0",
@@ -20,7 +22,9 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@prisma/client": "^4.6.1",
     "express": "^4.18.2",
+    "prisma": "^4.6.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

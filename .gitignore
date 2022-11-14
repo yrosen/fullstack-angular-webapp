@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/src/shared/types.g
 
 # Node
 /node_modules
