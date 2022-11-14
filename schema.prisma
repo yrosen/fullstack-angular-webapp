@@ -1,0 +1,22 @@
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:@localhost:3306/test"
+}
+
+generator src {
+  provider = "prisma-client-js"
+  output   = "src/shared/types.g"
+}
+
+generator dist {
+  provider = "prisma-client-js"
+  output   = "dist/shared/types.g"
+}
+
+model Todo {
+  id           Int       @id @default(autoincrement())
+  title        String
+  description  String    @db.Text
+  completed    Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+}

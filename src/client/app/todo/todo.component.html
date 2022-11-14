@@ -1,0 +1,8 @@
+<div *ngIf="todo">
+    <h3>{{ todo.id }}. {{ todo.title }}</h3>
+    {{ todo.description }}
+
+    <div>
+        <small>Added on {{ todo.createdAt|date:'short' }}</small>
+    </div>
+</div>

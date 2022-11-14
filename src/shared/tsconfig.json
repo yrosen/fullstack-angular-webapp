@@ -1,8 +1,8 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "baseUrl": "./src",
-        "outDir": "../../dist/server/server",
+        "baseUrl": ".",
+        "outDir": "../../dist/shared",
         "module": "commonjs",
         "esModuleInterop": true,
         "resolveJsonModule": false,
@@ -10,6 +10,6 @@
         "skipLibCheck": true
     },
     "include": [
-        "src/**/*",
+        "**/*",
     ]
 }

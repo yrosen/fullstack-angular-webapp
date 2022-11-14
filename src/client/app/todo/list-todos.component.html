@@ -1,0 +1,9 @@
+<div *ngIf="!todoList || todoList.length === 0">
+    <em>No To Do items were found.</em>
+</div>
+
+<button (click)="refresh()">Refresh</button>
+
+<div *ngIf="todoList &&  todoList.length >= 0">
+    <todo *ngFor="let todo of todoList" [todo]="todo"></todo>
+</div>

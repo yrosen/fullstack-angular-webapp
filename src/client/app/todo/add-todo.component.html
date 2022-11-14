@@ -1,0 +1,20 @@
+<strong>Add a new To Do item</strong>
+
+<div *ngIf="success" style="color: darkgreen; background-color: lightgreen; font-weight: bold; text-align: center; padding: 10px;">
+    This item has been successfully added!<br />
+    <a style="cursor: pointer; border-bottom: 1px dotted darkgreen;"(click)="reset()">Add Another?</a>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <p>
+        <label for="title">Title:</label><br />
+        <input id="title" type="text" formControlName="title" required />
+    </p>
+
+    <p>
+        <label for="description">Description:</label><br />
+        <textarea id="description" cols="40" formControlName="description" required></textarea>
+    </p>
+
+    <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
