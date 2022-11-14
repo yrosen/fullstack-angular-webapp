@@ -1,12 +1,15 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "../../dist/server",
         "module": "commonjs",
         "esModuleInterop": true,
-        "noEmit": false
+        "resolveJsonModule": false,
+        "noEmit": false,
+        "skipLibCheck": true
     },
     "include": [
-        "./**/*",
-        "package.json"
+        "src/**/*",
     ]
 }
